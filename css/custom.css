@@ -1,0 +1,60 @@
+/* 亮底的樣式 */
+:root,
+[data-bs-theme=light] {
+  /*線上色碼表，選色，google輸入：#色碼 to rgb，轉換成rgb，或直接google顏色挑選器選擇即可。*/
+  --bs-dark-rgb:7, 26, 102;
+}
+
+/* 搜尋googlefonts，選擇中文即可，按想要的樣式，Get embed code，用@import的語法 */
+/* 連結google雲端的字體，提供用戶一致體驗UX */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap');
+
+/* 套用googlefonts雲端字體，用body選取器標籤，改變全部的文案預設字體  */
+/* 字型權限：css>系統>瀏覽器，若為windows用戶，會先看到微軟正黑體，若不是windows用戶，則會看到google字體 */
+body { font-family: "微軟正黑體","Noto Sans TC", sans-serif;}
+
+/* 指定根元素的文字大小，單位是px */
+html {font-size: 20px;}
+
+/* 宣告設定h2標題顏色為藍色 */
+/* 選取器是標籤，影響整體，font-weight的值是100、200~900的整數 */
+h2 {font-size: 2rem;font-weight: 900;color: rgb(0, 0, 255);}
+
+/* 選取器是類別，影響個別，需要手動套用 */
+.h2-purple {font-size: 1.5rem;font-weight: 900;color: rgb(93, 13, 184);}
+
+h4 {font-size: 1.2rem;}
+
+/* 複和選取器(footer跟a)，拿掉文字超連結下底線，decoration：文字底線，none：設定不要 */
+footer a {text-decoration: none;}
+
+/* 文字首行縮排，老師設定的，需手動套用 */
+/* .textIndent{text-indent: 2rem;} */
+
+/* 個別設定要縮排的地方 */
+.indent {text-indent: 2rem;}
+
+.text-red{color: rgb(249, 7, 7);}
+
+.text-blue{color: blue;
+}
+
+.bg-blue {
+  background: rgba(24, 38, 199, .5);
+}
+
+/* 將雲端語法拉回自訂的css，重新定義圓角矩形 */
+.rounded-circle {
+  border-radius: 0% !important;
+} 
+
+/* 可以設定單一個圖片的圓角矩形 */
+.ellpess{
+  border-radius: 100px / 75px;
+}
+
+.carousel-item img{
+  min-height: 250px;
+  max-height: 1000px;
+  object-fit: cover;
+}
