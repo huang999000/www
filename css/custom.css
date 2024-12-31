@@ -39,6 +39,11 @@ footer a {text-decoration: none;}
 .text-blue{color: blue;
 }
 
+.text-orange{color: rgb(221, 119, 2);
+}
+
+.text-blod{font-weight:900;}
+
 .bg-blue {
   background: rgba(24, 38, 199, .5);
 }
